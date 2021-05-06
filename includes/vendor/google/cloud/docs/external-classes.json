@@ -1,0 +1,110 @@
+[{
+  "name": "array",
+  "uri": "http://php.net/manual/en/language.types.array.php"
+}, {
+  "name": "bool",
+  "uri": "http://php.net/manual/en/language.types.boolean.php"
+}, {
+  "name": "Boolean",
+  "uri": "http://php.net/manual/en/language.types.boolean.php"
+}, {
+  "name": "callable",
+  "uri": "http://php.net/manual/en/language.types.callable.php"
+}, {
+  "name": "float",
+  "uri": "http://php.net/manual/en/language.types.float.php"
+}, {
+  "name": "int",
+  "uri": "http://php.net/manual/en/language.types.integer.php"
+}, {
+  "name": "mixed",
+  "uri": "http://php.net/manual/en/language.pseudo-types.php#language.types.mixed"
+}, {
+  "name": "null",
+  "uri": "http://php.net/manual/en/language.types.null.php"
+}, {
+  "name": "resource",
+  "uri": "http://php.net/manual/en/language.types.resource.php"
+}, {
+  "name": "string",
+  "uri": "http://php.net/manual/en/language.types.string.php"
+}, {
+  "name": "void",
+  "uri": "http://php.net/manual/en/language.pseudo-types.php#language.types.void"
+}, {
+  "name": "DateTimeInterface",
+  "uri": "http://php.net/manual/en/class.datetimeinterface.php"
+}, {
+  "name": "Exception",
+  "uri": "http://php.net/manual/en/class.exception.php"
+}, {
+  "name": "Generator",
+  "uri": "http://php.net/manual/en/class.generator.php"
+}, {
+  "name": "Iterator",
+  "uri": "http://php.net/manual/en/class.iterator.php"
+}, {
+  "name": "JsonSerializable",
+  "uri": "http://php.net/manual/en/class.jsonserializable.php"
+}, {
+  "name": "Psr\\Cache\\",
+  "uri": "https://github.com/php-fig/cache/blob/master/src/%s.php"
+}, {
+  "name": "Psr\\Log\\",
+  "uri": "https://github.com/php-fig/log/blob/master/Psr/Log/%s.php"
+}, {
+  "name": "Psr\\Http\\Message\\",
+  "uri": "https://github.com/php-fig/http-message/blob/master/src/%s.php"
+}, {
+  "name": "Google\\Auth\\",
+  "uri": "https://github.com/google/google-auth-library-php/blob/master/src/%s.php"
+}, {
+  "name": "Google\\GAX\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/GAX/%s.html"
+}, {
+  "name": "Google\\Api\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Api/%s.html"
+}, {
+  "name": "Google\\Cloud\\Audit\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Cloud/Audit/%s.html"
+}, {
+  "name": "Google\\Iam\\V1\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Iam/V1/%s.html"
+}, {
+  "name": "Google\\Logging\\Type\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Logging/Type/%s.html"
+}, {
+  "name": "Google\\Longrunning\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Longrunning/%s.html"
+}, {
+  "name": "Google\\Protobuf\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Protobuf/%s.html"
+}, {
+  "name": "Google\\Rpc\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Rpc/%s.html"
+}, {
+  "name": "Google\\Type\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Type/%s.html"
+}, {
+  "name": "Google\\Cloud\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Cloud/%s.html"
+}, {
+  "name": "Google\\Devtools\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Devtools/%s.html"
+}, {
+  "name": "Google\\Logging\\V2\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Logging/V2/%s.html"
+}, {
+  "name": "Google\\Monitoring\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Monitoring/%s.html"
+}, {
+  "name": "Google\\Privacy\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Privacy/%s.html"
+}, {
+  "name": "Google\\Pubsub\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Pubsub/%s.html"
+}, {
+  "name": "Google\\Spanner\\",
+  "uri": "https://googleapis.github.io/gax-php/#Google/Spanner/%s.html"
+}]
+

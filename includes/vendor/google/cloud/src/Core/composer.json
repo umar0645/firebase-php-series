@@ -1,0 +1,34 @@
+{
+    "name": "google/cloud-core",
+    "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
+    "license": "Apache-2.0",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.5",
+        "rize/uri-template": "~0.3",
+        "google/auth": "~0.9|^1.0",
+        "guzzlehttp/guzzle": "^5.3|^6.0",
+        "guzzlehttp/psr7": "^1.2",
+        "monolog/monolog": "~1",
+        "psr/http-message": "1.0.*"
+    },
+    "suggest": {
+        "symfony/lock": "Required for the Spanner cached based session pool. Please require the following commit: 3.3.x-dev#1ba6ac9"
+    },
+    "extra": {
+        "component": {
+            "id": "cloud-core",
+            "target": "GoogleCloudPlatform/google-cloud-php-core.git",
+            "path": "src/Core",
+            "entry": null
+        }
+    },
+    "bin": [
+        "bin/google-cloud-batch"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Google\\Cloud\\Core\\": ""
+        }
+    }
+}

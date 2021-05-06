@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -ev
+
+function pushDocs () {
+  git submodule add -q -f -b gh-pages https://${GH_OAUTH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} ghpages
+
+  rsync -aP docs/json/* ghpages/json/
+
+  cp docs/home.html ghpages/json
+  cp docs/manifest.json ghpages
+  cd ghpages
+  git add .
+  if [[ -n "$(git status --porcelain)" ]]; then
+    git config user.name "travis-ci"
+    git config user.email "travis@travis-ci.org"
+    git commit -m "Updating docs for ${1}"
+    git status
+    git push -q https://${GH_OAUTH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} HEAD:gh-pages
+  else
+    echo "Nothing to commit."
+  fi
+}
+
+if [ "${TRAVIS_BRANCH}" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+  pushDocs $TRAVIS_BRANCH
+fi
+
+if [[ ! -z $TRAVIS_TAG ]]; then
+  pushDocs $TRAVIS_TAG
+fi

@@ -1,0 +1,117 @@
+{
+    "name": "google/cloud",
+    "type": "library",
+    "description": "Google Cloud Client Library",
+    "keywords": [
+        "google apis client",
+        "google api client",
+        "google apis",
+        "google api",
+        "google",
+        "google cloud platform",
+        "google cloud",
+        "cloud",
+        "bigquery",
+        "big query",
+        "datastore",
+        "stackdriver logging",
+        "language",
+        "natural language",
+        "pubsub",
+        "pub sub",
+        "spanner",
+        "speech",
+        "storage",
+        "gcs",
+        "translate",
+        "translation",
+        "vision"
+    ],
+    "homepage": "http://github.com/GoogleCloudPlatform/google-cloud-php",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Dave Supplee",
+            "email": "dwsupplee@gmail.com"
+        },
+        {
+            "name": "John Pedrie",
+            "email": "john@pedrie.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "rize/uri-template": "~0.3",
+        "google/auth": "~0.9|^1.0",
+        "guzzlehttp/guzzle": "^5.3|^6.0",
+        "guzzlehttp/psr7": "^1.2",
+        "monolog/monolog": "~1",
+        "psr/http-message": "1.0.*",
+        "ramsey/uuid": "~3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "2.*",
+        "phpdocumentor/reflection": "^3.0",
+        "symfony/console": "^3.0",
+        "league/json-guard": "^0.3",
+        "erusev/parsedown": "^1.6",
+        "vierbergenlars/php-semver": "^3.0",
+        "google/proto-client": "^0.21.0",
+        "google/gax": "^0.21.0",
+        "symfony/lock": "3.3.x-dev#1ba6ac9",
+        "phpseclib/phpseclib": "^2"
+    },
+    "replace": {
+        "google/cloud-bigquery": "0.2.1",
+        "google/cloud-core": "1.7.0",
+        "google/cloud-datastore": "1.0.0",
+        "google/cloud-error-reporting": "0.4.1",
+        "google/cloud-logging": "1.3.1",
+        "google/cloud-monitoring": "0.4.1",
+        "google/cloud-language": "0.4.0",
+        "google/cloud-pubsub": "0.6.1",
+        "google/cloud-spanner": "0.4.0",
+        "google/cloud-speech": "0.6.0",
+        "google/cloud-storage": "1.1.3",
+        "google/cloud-trace": "0.3.1",
+        "google/cloud-translate": "1.0.0",
+        "google/cloud-videointelligence": "0.3.1",
+        "google/cloud-vision": "0.4.0"
+    },
+    "suggest": {
+        "google/gax": "Required to support gRPC",
+        "google/proto-client": "Required to support gRPC",
+        "phpseclib/phpseclib": "May be used in place of OpenSSL for creating signed Cloud Storage URLs. Please require version ^2."
+    },
+    "autoload": {
+        "psr-4": {
+            "Google\\Cloud\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Google\\Cloud\\Dev\\": "dev/src",
+            "Google\\Cloud\\Tests\\": "tests",
+            "Google\\Cloud\\Tests\\System\\": "tests/system",
+            "Google\\Cloud\\Tests\\Unit\\": "tests/unit"
+        },
+        "files": [
+            "dev/src/Functions.php"
+        ]
+    },
+    "scripts": {
+        "google-cloud": "dev/google-cloud"
+    },
+    "bin": [
+        "src/Core/bin/google-cloud-batch"
+    ],
+    "extra": {
+        "component": {
+            "id": "google-cloud",
+            "target": "git@github.com:jdpedrie-gcp/google-cloud-php.git",
+            "path": "src",
+            "entry": "ServiceBuilder.php"
+        }
+    }
+}

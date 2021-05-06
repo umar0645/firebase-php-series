@@ -1,0 +1,25 @@
+{
+    "title": "Google Cloud PHP",
+    "services": [{
+      "title": "ServiceBuilder",
+      "type": "servicebuilder"
+    }],
+    "includes": [
+        "cloud-bigquery",
+        "cloud-datastore",
+        "cloud-dlp",
+        "cloud-error-reporting",
+        "cloud-logging",
+        "cloud-monitoring",
+        "cloud-language",
+        "cloud-pubsub",
+        "cloud-spanner",
+        "cloud-speech",
+        "cloud-storage",
+        "cloud-trace",
+        "cloud-translate",
+        "cloud-videointelligence",
+        "cloud-vision",
+        "cloud-core"
+    ]
+}
